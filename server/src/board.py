@@ -21,7 +21,7 @@ class Board(object):
         map_pool = ["empty" for _ in range(23)]
         random.shuffle(map_pool)
         exit_pool = ["exit"]
-        while exit_pool.len() < 12:
+        while len(exit_pool) < 12:
             exit_pool.append(map_pool.pop())
         self.board = [[None for _ in range(5)] for _ in range(5)]
         for i in range(5):
